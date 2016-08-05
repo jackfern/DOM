@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href=".css">
+    <title>Hi-Lo Game</title>
+    <h1>Hi-Lo Game</h1>
+    <script type="text/javascript" src="dom.js"></script>
+    </script>
+  </head>
+  <body>
+  <input type="text" value="Enter your name here" id ="userName"/>
+  <br>
+  <input type="button" value="Start Game" onclick="getRandomInt(); reset();"/>
+  <br>
+  <br>
+  <p>You only get 7 Guesses.</p><p id="count"></p>
+  <input type="text" value="Guess between 1-100" id ="userGuess"/>
+  <input type="button" value="Guess" onclick="hiLo(); count();" id="myBtn"/>
+  <p id="error"></p>
+<p> <strong> Hint </strong> </p>
+<p id="hint"> The hint will show up here </p>
+<h1 id="result"><h1>
+  </body>
+</html>
